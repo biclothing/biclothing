@@ -113,7 +113,7 @@ footer {
     .logo {
         transform: none; /* Horizontal di mobile */
         max-width: 80%; /* Lebih kecil di mobile */
-        max-height: 15%; /* Batasi tinggi maksimum */
+        min-height: 15%; /* Batasi tinggi maksimum */
     }
 
     .social-item a {
