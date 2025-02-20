@@ -88,6 +88,9 @@ footer {
     }
 
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto; 
+    }
     .container {
         flex-direction: column; /* Mobile: logo di atas */
         margin: 0 auto;
