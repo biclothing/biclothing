@@ -19,7 +19,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: row-reverse; /* Desktop: logo di kanan */
-    margin: 0 auto;
+    margin: auto;
 }
 
 .logo-section {
