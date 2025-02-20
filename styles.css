@@ -109,7 +109,7 @@ footer {
         .logo-section {
         height: auto; /* Ubah tinggi menjadi sesuai konten */
         padding: 10px 0 5px; /* Reduksi padding vertikal */
-        min-height: 80px; /* Tinggi minimum untuk logo */
+        min-height: 50px; /* Tinggi minimum untuk logo */
     }
 
     .social-section {
