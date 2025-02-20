@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Cooper MD BT Medium';
+    src: url('cooper-md-bt-medium.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Tinggi maksimum 100% viewport */
+    overflow: hidden; /* Hilangkan scroll */
+    font-family: sans-serif; /* Fallback */
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse; /* Desktop: logo di kanan */
+    margin: 0 auto;
+}
+
+.logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: -75px;
+}
+
+.social-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: -75px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .social-item a {
+        font-size: 2em;
+        color: #000;
+        text-decoration: none;
+    }
+
+.text {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+}
+
+.logo {
+    font-family: 'Cooper MD BT Medium', serif;
+    font-size: clamp(12px, 12vw, 96px); /* Batasi ukuran font */
+    max-width: 90%; /* Batasi lebar agar tidak keluar */
+    transform: rotate(-90deg); /* Vertikal di desktop */
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer a {
+        margin: 0 10px;
+        color: #000;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mobile: logo di atas */
+        margin-top: -50px;
+    }
+
+    .logo-section {
+        height: 25%;
+        padding: 10px 0 20px;
+    }
+
+    .social-section {
+        height: 60%;
+        padding: 5px;
+    }
+
+    .logo {
+        transform: none; /* Horizontal di mobile */
+        font-size: clamp(12px, 12vw, 76px); /* Batasi ukuran font */
+        max-height: 70%; /* Batasi tinggi */
+    }
+
+    .social-item a {
+        font-size: 2em;
+    }
+
+    .text {
+        font-size: 0.7em;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
