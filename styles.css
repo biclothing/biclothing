@@ -69,6 +69,11 @@ main {
     object-fit: contain; /* Pastikan gambar tidak terdistorsi */
     transition: 0.3s ease-in-out; /* Animasi perubahan ukuran */
 }
+.social-icon {
+    width: 2em; /* Sesuaikan dengan ukuran ikon Font Awesome (1.2em) */
+    height: 2em; /* Menjaga proporsi */
+    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+}
 
 footer {
     text-align: center;
