@@ -8,8 +8,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Tinggi maksimum 100% viewport */
-    overflow: hidden; /* Hilangkan scroll */
+    min-height: 100vh; /* Tinggi maksimum 100% viewport */
+    overflow-y: auto;
     font-family: sans-serif; /* Fallback */
 }
 
@@ -94,12 +94,14 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Mobile: logo di atas */
-        margin-top: -50px;
+        margin-top: 0px;
+        gap: 10px;
     }
 
     .logo-section {
-        height: 15%;
+        height: auto;
         padding: 10px 0 20px;
+        min-height: 40px;
     }
 
     .social-section {
@@ -109,9 +111,12 @@ footer {
     }
 
     .logo {
+        font-family: 'Cooper MD BT Medium', sans-serif !important;
         transform: none; /* Horizontal di mobile */
-        font-size: clamp(12px, 12vw, 76px); /* Batasi ukuran font */
-        max-height: 70%; /* Batasi tinggi */
+        font-size: clamp(20px, 15vw, 60px); /* Batasi ukuran font */
+        max-height: 50%; /* Batasi tinggi */
+        padding: 5px 0;
+        line-height: 1.2;
     }
 
     .social-item a {
