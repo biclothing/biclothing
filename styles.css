@@ -93,34 +93,37 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Mobile: logo di atas */
+        flex-direction: column;
         margin-top: 0;
-        height: auto;
+        gap: 10px; /* Tambahkan jarak antar element */
     }
     body {
-        overflow-y: auto; /* Pastikan overflow aktif di mobile */
+        overflow-y: auto; /* Pastikan scroll aktif */
     }
     main {
-        flex: 1 0 auto; /* Mencegah main menyusut */
+        flex: 1;
+        min-height: auto; /* Izinkan main menyusut */
     }
 
     .logo-section {
-        height: 20px;
-        padding: 10px 0 20px;
+        .logo-section {
+        height: auto; /* Ubah tinggi menjadi sesuai konten */
+        padding: 10px 0 5px; /* Reduksi padding vertikal */
+        min-height: 80px; /* Tinggi minimum untuk logo */
     }
 
     .social-section {
-        height: auto;
-        padding: 10px;
-        margin-top: 0px;
-        flex: none;
+        margin-top: -20px; /* Tarik section sosial lebih ke atas */
+        padding: 5px;
     }
 
     .logo {
-        font-family: 'Cooper MD BT Medium', serif;
-        transform: none; /* Horizontal di mobile */
-        font-size: clamp(12px, 12vw, 76px); /* Batasi ukuran font */
-        max-height: 70%; /* Batasi tinggi */
+        font-family: 'Cooper MD BT Medium', sans-serif !important; /* Ganti fallback ke sans-serif dan tambahkan !important */
+        transform: none;
+        font-size: clamp(20px, 15vw, 60px); /* Adjust ukuran font */
+        max-height: 50%; /* Reduksi tinggi maksimum */
+        padding: 5px 0;
+        line-height: 1.2; /* Atur line-height lebih ketat */
     }
 
     .social-item a {
