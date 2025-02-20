@@ -101,6 +101,7 @@ footer {
     .logo-section {
         height: 20%;
         padding: 10px 0 20px;
+        margin: auto;
     }
 
     .social-section {
