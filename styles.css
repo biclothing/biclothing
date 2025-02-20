@@ -15,7 +15,6 @@ body {
 
 main {
     flex: 1;
-    display: flex;
 }
 
 .container {
@@ -92,6 +91,17 @@ footer {
     }
 
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto; 
+    }
+
+    main {
+        flex: 1 0 auto; 
+    }
+
+    footer {
+        flex-shrink: 0; 
+    }
     .container {
         flex-direction: column; /* Mobile: logo di atas */
         margin-top: 0px;
