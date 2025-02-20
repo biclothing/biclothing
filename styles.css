@@ -105,7 +105,7 @@ footer {
     }
 
     .logo-section {
-        height: auto;
+        height: 20px;
         padding: 10px 0 20px;
     }
 
@@ -120,7 +120,7 @@ footer {
         font-family: 'Cooper MD BT Medium', serif;
         transform: none; /* Horizontal di mobile */
         font-size: clamp(12px, 12vw, 76px); /* Batasi ukuran font */
-        max-height: 30%; /* Batasi tinggi */
+        max-height: 70%; /* Batasi tinggi */
     }
 
     .social-item a {
