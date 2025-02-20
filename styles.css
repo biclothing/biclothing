@@ -3,8 +3,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Tinggi maksimum 100% viewport */
-    overflow: hidden; /* Hilangkan scroll */
+    min-height: 100vh;
+    overflow-y: auto;
     font-family: sans-serif; /* Fallback */
 }
 
@@ -90,7 +90,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Mobile: logo di atas */
-        margin: auto;
+        margin: 0 auto;
     }
 
     .logo-section {
