@@ -113,7 +113,7 @@ footer {
     .logo {
         transform: none; /* Horizontal di mobile */
         max-width: 80%; /* Lebih kecil di mobile */
-        max-height: 80vh; /* Batasi tinggi maksimum */
+        max-height: 15%; /* Batasi tinggi maksimum */
     }
 
     .social-item a {
@@ -121,7 +121,7 @@ footer {
     }
 
     .text {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     footer {
