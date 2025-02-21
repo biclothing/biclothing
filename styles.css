@@ -18,64 +18,63 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row-reverse; /* Desktop: logo di kanan */
+    flex-direction: row; /* Desktop: logo tetap di kanan */
     margin: auto;
+    position: relative;
 }
 
 .logo-section {
-    position: sticky;
-    top: 20px; /* Logo akan tetap di atas saat mencapai batas ini */
+    position: fixed;
+    top: 20px;
     right: 20px;
-    flex: 1;
+    width: 150px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: -75px;
-}
-
-.social-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    padding-right: -75px;
-}
-
-.social-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-    .social-item a {
-        font-size: 2em;
-        color: #000;
-        text-decoration: none;
-    }
-
-.text {
-    font-size: 0.8em;
-    font-style: italic;
-    text-align: center;
-    margin-top: 5px;
-    color: #333;
 }
 
 .logo {
-    max-width: 90%; /* Batasi lebar maksimum */
-    width: auto;
+    max-width: 100%; /* Batasi lebar maksimum */
     height: auto; /* Biarkan tinggi menyesuaikan */
     transform: rotate(-90deg); /* Vertikal di desktop */
     object-fit: contain; /* Pastikan gambar tidak terdistorsi */
     transition: 0.3s ease-in-out; /* Animasi perubahan ukuran */
 }
-.social-icon {
-    width: 1.2em; /* Sesuaikan dengan ukuran ikon Font Awesome (1.2em) */
-    height: 1.2em; /* Menjaga proporsi */
-    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+
+.content-section {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Biarkan scroll hanya jika teks terlalu panjang */
+    font-size: 0.9em; /* Ukuran font default */
+    color: #333; /* Warna teks */
+    margin-right: 180px; /* Beri jarak agar konten tidak tertutup logo */
+}
+
+.content-section h1 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.content-section h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-section p, .content-section ul {
+    line-height: 1.2em;
+}
+
+.content-section a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -88,84 +87,35 @@ footer {
     align-items: center;
 }
 
-    footer a {
-        margin: 0 10px;
-        color: #000;
-        text-decoration: none;
-        font-size: 0.9em;
-    }
-.content-section {
-    padding: 10px auto 20px; /* Tambah ruang di dalam konten */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto; /* Biarkan scroll hanya jika teks terlalu panjang */
-    font-size: 0.9em; /* Ukuran font default */
-    color: #333; /* Warna teks */
-}
-
-.content-section h1 {
-    font-size: 1.4em; /* Judul utama lebih besar */
-    margin-bottom: 10px;
-}
-
-.content-section h2 {
-    font-size: 1.2em; /* Subjudul */
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.content-section p, .content-section ul {
-    line-height: 1.2em; /* Jarak antar baris */
-}
-
-.content-section a {
-    color: #0066cc; /* Warna link */
+footer a {
+    margin: 0 10px;
+    color: #000;
     text-decoration: none;
-}
-
-.content-section a:hover {
-    text-decoration: underline; /* Efek hover pada link */
+    font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-y: auto; 
-    }
     .container {
-        flex-direction: column; /* Mobile: logo di atas */
+        flex-direction: column;
         margin: 0 auto;
     }
 
     .logo-section {
-        height: auto; /* Ubah tinggi menjadi sesuai konten */
-        padding: 10px 0 5px; /* Reduksi padding vertikal */
-        min-height: 80px;
-    }
-
-    .social-section {
-        height: 60%;
-        padding: 5px;
-        margin-top: 5px;
+        position: static; /* Logo tidak fixed di mobile */
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0;
     }
 
     .logo {
         transform: none; /* Horizontal di mobile */
         max-width: 80%;
-        max-height: 50%;/* Lebih kecil di mobile */
-        min-height: 15%; /* Batasi tinggi maksimum */
+        max-height: 50%;
+        min-height: 15%;
         padding: 5px 0;
     }
 
-    .social-item a {
-        font-size: 2em;
-    }
-
-    .text {
-        font-size: 0.8em;
-    }
-
-    footer {
-        padding: 5px;
+    .content-section {
+        margin-right: 0; /* Hapus margin agar tidak ada ruang kosong */
     }
 }
