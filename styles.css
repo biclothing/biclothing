@@ -105,18 +105,18 @@ footer {
 }
 
 .content-section h1 {
-    font-size: 1.7em; /* Judul utama lebih besar */
+    font-size: 1.4em; /* Judul utama lebih besar */
     margin-bottom: 10px;
 }
 
 .content-section h2 {
-    font-size: 1.4em; /* Subjudul */
+    font-size: 1.2em; /* Subjudul */
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .content-section p, .content-section ul {
-    line-height: 1; /* Jarak antar baris */
+    line-height: 1em; /* Jarak antar baris */
 }
 
 .content-section a {
