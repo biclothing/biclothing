@@ -25,9 +25,9 @@ main {
 
 .logo-section {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    max-width: 80%;
+    top: 250px;
+    right: 5px;
+    max-width: 50%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ main {
 }
 
 .logo {
-    max-width: 70%; /* Batasi lebar maksimum */
+    max-width: 80%; /* Batasi lebar maksimum */
     height: auto; /* Biarkan tinggi menyesuaikan */
     width:auto;
     transform: rotate(-90deg); /* Vertikal di desktop */
@@ -76,6 +76,7 @@ main {
 
 .content-section {
     padding: 20px;
+    max-width: 60%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -140,7 +141,7 @@ footer a {
 
     .logo-section {
         position: static; /* Logo tidak fixed di mobile */
-        width: 100%;
+        max-width: 100%;
         justify-content: center;
         padding: 10px 0;
     }
@@ -155,5 +156,6 @@ footer a {
 
     .content-section {
         margin-right: 0; /* Hapus margin agar tidak ada ruang kosong */
+        max-width: 100%;
     }
 }
