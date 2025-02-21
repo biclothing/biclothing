@@ -116,7 +116,7 @@ footer {
 }
 
 .content-section p, .content-section ul {
-    line-height: 1em; /* Jarak antar baris */
+    line-height: 1.2em; /* Jarak antar baris */
 }
 
 .content-section a {
