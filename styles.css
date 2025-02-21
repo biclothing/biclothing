@@ -100,7 +100,7 @@ footer {
     display: flex;
     flex-direction: column;
     overflow-y: auto; /* Biarkan scroll hanya jika teks terlalu panjang */
-    font-size: 0.8em; /* Ukuran font default */
+    font-size: 0.9em; /* Ukuran font default */
     color: #333; /* Warna teks */
 }
 
