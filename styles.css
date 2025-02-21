@@ -91,8 +91,11 @@ footer {
         text-decoration: none;
         font-size: 0.9em;
     }
-    .content-section {
-    padding: 20px; /* Tambah ruang di dalam konten */
+.content-section {
+    padding: 10px; /* Tambah ruang di dalam konten */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto; /* Biarkan scroll hanya jika teks terlalu panjang */
     font-size: 1em; /* Ukuran font default */
     color: #333; /* Warna teks */
