@@ -110,13 +110,13 @@ footer {
 }
 
 .content-section h2 {
-    font-size: 1.5em; /* Subjudul */
+    font-size: 1.4em; /* Subjudul */
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .content-section p, .content-section ul {
-    line-height: 1.2; /* Jarak antar baris */
+    line-height: 1; /* Jarak antar baris */
 }
 
 .content-section a {
