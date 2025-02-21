@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-y: auto;
-    font-family: sans-serif; /* Fallback */
+    font-family: sans-serif;
 }
 
 main {
@@ -18,25 +18,57 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row; /* Desktop: logo tetap di kanan */
+    flex-direction: row;
     margin: auto;
     position: relative;
 }
 
 .logo-section {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 150px;
+    top: 120px;
+    right: 120px;
+    max-width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: -75px;
+}
+.social-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: -75px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .social-item a {
+        font-size: 2em;
+        color: #000;
+        text-decoration: none;
+    }
+
+.text {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
 }
 
 .logo {
-    max-width: 100%; /* Batasi lebar maksimum */
+    max-width: 90%; /* Batasi lebar maksimum */
     height: auto; /* Biarkan tinggi menyesuaikan */
+    width:auto;
     transform: rotate(-90deg); /* Vertikal di desktop */
     object-fit: contain; /* Pastikan gambar tidak terdistorsi */
     transition: 0.3s ease-in-out; /* Animasi perubahan ukuran */
@@ -75,6 +107,12 @@ main {
 
 .content-section a:hover {
     text-decoration: underline;
+}
+
+.social-icon {
+    width: 1.2em; /* Sesuaikan dengan ukuran ikon Font Awesome (1.2em) */
+    height: 1.2em; /* Menjaga proporsi */
+    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
 }
 
 footer {
