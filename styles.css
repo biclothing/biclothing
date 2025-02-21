@@ -37,11 +37,12 @@ main {
 .social-section {
     flex: 1;
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    padding-right: -75px;
+    padding-right: 375px;
 }
 
 .social-item {
@@ -153,7 +154,10 @@ footer a {
         min-height: 15%;
         padding: 5px 0;
     }
-
+    .social-section {
+        max-width: 100%;
+        padding: 10px;
+    }
     .content-section {
         margin-right: 0; /* Hapus margin agar tidak ada ruang kosong */
         max-width: 100%;
